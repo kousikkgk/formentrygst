@@ -1,0 +1,23 @@
+/*@RequestMapping("/home")
+	public ModelAndView showHomePage(@RequestParam("gstnumber") String gstNo,HttpSession session) {
+		ModelAndView mav=new ModelAndView("index");
+		String partyName = rRepo.findBygstnumber(gstNo.replaceAll(",", ""));
+		session.setAttribute("partygstno", gstNo.replaceAll(",", ""));
+		session.setAttribute("partyname", partyName);
+		//System.out.println(Str);
+		mav.addObject("partyname", session.getAttribute("partyname"));
+		//mav.addObject("partygstno", gstNo.replaceAll(",", ""));
+		return mav;
+	}*/
+	/*@GetMapping("/home")//, method = { RequestMethod.POST, RequestMethod.GET })
+	public ModelAndView showHomePage(HttpSession session) {
+		ModelAndView mav=new ModelAndView("index");
+		mav.addObject("partyname", session.getAttribute("partyname"));
+		return mav;
+	}*/
+	/*@RequestMapping("/register")
+	public String showHomePage(@ModelAttribute Register register) {
+		register.setGstnumber(register.getGstnumber().replaceAll(",", ""));
+		rRepo.save(register);
+		return "login";
+	}*/
